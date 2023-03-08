@@ -18,7 +18,7 @@ request.interceptors.request.use(
   }
 );
 
-// 相应拦截器
+// 响应拦截器
 request.interceptors.response.use(
   function (response) {
     return response;
