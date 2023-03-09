@@ -36,12 +36,16 @@ request.interceptors.request.use(
 // 响应拦截器
 request.interceptors.response.use(
   function (response) {
-    const { isRepeat } = response.config;
+    const {
+      config: { isRepeat },
+      status,
+      data,
+    } = response;
     if (!isRepeat) {
       removePendingRequest(response.config);
     }
 
-    return response;
+    return status === 200 && data.data;
   },
   function (error) {
     return Promise.reject(error);
