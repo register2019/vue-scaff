@@ -11,8 +11,8 @@ const getRunGraphData = () => {
 };
 
 onMounted(() => {
-  testAxios();
-  testAxios();
+  // testAxios();
+  // testAxios();
 });
 
 const testAxios = async () => {
