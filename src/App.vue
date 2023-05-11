@@ -1,24 +1,11 @@
 <template>
-  <div>App</div>
+  <router-view>
+    <layout-index />
+  </router-view>
 </template>
 
 <script lang="ts" setup>
-import { onMounted } from "vue";
-import request from "./config/request";
-
-const getRunGraphData = () => {
-  return request.get("/getRunGraphData");
-};
-
-onMounted(() => {
-  // testAxios();
-  // testAxios();
-});
-
-const testAxios = async () => {
-  const data = await getRunGraphData();
-  console.log(data);
-};
+import LayoutIndex from "./layout/layout-index.vue";
 </script>
 
 <style lang="scss" scoped></style>
