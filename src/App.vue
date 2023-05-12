@@ -1,11 +1,9 @@
 <template>
-  <router-view>
-    <layout-index />
-  </router-view>
+  <div>
+    <router-view />
+  </div>
 </template>
 
-<script lang="ts" setup>
-import LayoutIndex from "./layout/layout-index.vue";
-</script>
+<script lang="ts" setup></script>
 
 <style lang="scss" scoped></style>
