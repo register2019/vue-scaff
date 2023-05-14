@@ -2,9 +2,7 @@
   <div class="header">header</div>
 </template>
 
-<script lang="ts" setup>
-import { ref, reactive, watch, computed } from "vue";
-</script>
+<script lang="ts" setup></script>
 
 <style lang="scss" scoped>
 .header {

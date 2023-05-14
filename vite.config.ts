@@ -13,11 +13,9 @@ export default defineConfig({
     vue(),
     vueJsx(),
     AutoImport({
-      dts: "/src/typings",
       resolvers: [ElementPlusResolver()],
     }),
     Components({
-      dts: "/src/typings",
       resolvers: [
         ElementPlusResolver({
           importStyle: "sass",

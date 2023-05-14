@@ -15,8 +15,7 @@
 </template>
 
 <script lang="ts" setup>
-import { ref, reactive, watch, computed } from "vue";
-import LayoutSider from "./layout-sider.vue";
+import LayoutSider from "./SideMenu/SideMenu.vue";
 import LayoutHeader from "./layout-header.vue";
 import LayoutMain from "./layout-main.vue";
 </script>
